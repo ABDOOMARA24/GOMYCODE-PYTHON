@@ -1,0 +1,101 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ABDOOMARA24/GOMYCODE-PYTHON/blob/main/Guess%20the%20number%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "kvUZBhNpoY0b"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from random import randint\n",
+        "number = randint(1,100)\n",
+        "guess = int(input(\"guess a number between 1 and 100: \"))\n",
+        "\n",
+        "while guess != number:\n",
+        "  if guess < number:\n",
+        "    print(\"your guess was too low.\")\n",
+        "    guess = int(input(\"guess again.\"))\n",
+        "  elif guess > number:\n",
+        "    print(\"your guess was too high.\")\n",
+        "    guess = int(input(\"guess again.\"))\n",
+        "\n",
+        "  else :\n",
+        "      print (\"your guess was too high.\")\n",
+        "\n",
+        "      break\n",
+        "\n",
+        "print (\"congratulations,you gessed the number.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LXD9fzUJu9Ce",
+        "outputId": "320a2470-cab1-4e13-9938-6817c4f74505"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "guess a number between 1 and 100: 50\n",
+            "your guess was too high.\n",
+            "guess again.40\n",
+            "your guess was too high.\n",
+            "guess again.30\n",
+            "your guess was too high.\n",
+            "guess again.20\n",
+            "your guess was too high.\n",
+            "guess again.1\n",
+            "your guess was too low.\n",
+            "guess again.10\n",
+            "your guess was too high.\n",
+            "guess again.2\n",
+            "your guess was too low.\n",
+            "guess again.3\n",
+            "congratulations,you gessed the number.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "ULFWxlc0G4yE"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
